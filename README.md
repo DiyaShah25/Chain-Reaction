@@ -1,7 +1,7 @@
 <h1 align="center">⚡ Chain Reaction ⚡</h1>
 
 <p align="center">
-  <i>An element-themed multiplayer strategy board game with immersive visuals & sound — built entirely with HTML, CSS & JavaScript.</i>
+  <i>A multiplayer strategy board game inspired by the five elements — featuring immersive themes, ambient soundscapes & explosive chain reactions.</i>
 </p>
 
 <p align="center">
@@ -11,29 +11,29 @@
 <p align="center">
   <img src="https://img.shields.io/badge/HTML-85.9%25-E34F26?style=flat-square&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS-14.1%25-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel"/>
-  <img src="https://img.shields.io/badge/Contributors-4-green?style=flat-square"/>
 </p>
 
 ---
 
 ## 📖 About
 
-**Chain Reaction** is a classic two-player strategy game brought to life on the web. Players compete on a grid by placing colored orbs — but when a cell overloads, it **explodes**, sending orbs flying into adjacent cells and potentially setting off a devastating **chain reaction** that can flip the entire board in a single turn.
+**Chain Reaction** is a two-player strategy game where players take turns placing colored orbs on a grid. When a cell overloads beyond its **critical mass**, it explodes — launching orbs into adjacent cells and potentially setting off a devastating **chain reaction** that can flip the entire board in a single move.
 
-What makes this version special is its **five elemental themes** — 🔥 Fire, 💧 Water, 🌍 Earth, 💨 Air, and ✨ Ether — each transforming the game with unique background art, color palettes, and ambient soundscapes. The project also includes a **Diagonal Splitting Mode** for an alternative twist on the classic mechanics.
+The game comes with **five elemental themes** — 🔥 Fire, 💧 Water, 🌍 Earth, 💨 Air, and ✨ Ether — each with its own unique background art, color palette, and ambient soundtrack. Every element also supports a **Diagonal Splitting Mode** for an alternative gameplay twist.
 
 ---
 
 ## ✨ Key Features
 
-- 🎮 **Classic Chain Reaction Gameplay** — Turn-based strategy on an m × n grid with critical mass explosion mechanics
-- 🌋 **5 Elemental Themes** — Fire 🔥 · Water 💧 · Earth 🌍 · Air 💨 · Ether ✨ — each with distinct visuals & audio
-- 🎲 **Diagonal Splitting Mode** — An alternate game variant available for every element
-- 🔊 **Immersive Sound Design** — Homepage background music, per-element ambient audio, and orb burst sound effects
-- 🎥 **3D Animated Carousel** — Stunning element selection screen with CSS 3D transforms and reflections
-- 📖 **Built-in Guide** — In-app "How to Play" modal so new players can jump right in
-- ⚙️ **Settings & Feedback** — Audio toggle, emoji-based feedback form, and user sign-up panel
+- 🎮 **Classic Chain Reaction Gameplay** — Turn-based strategy on an m × n grid with critical mass mechanics
+- 🌋 **5 Elemental Themes** — Fire 🔥 · Water 💧 · Earth 🌍 · Air 💨 · Ether ✨ — distinct visuals & audio for each
+- 🎲 **Diagonal Splitting Mode** — Alternate game variant available for every element
+- 🔊 **Immersive Sound Design** — Background music, per-element ambient audio, and burst sound effects
+- 🎥 **3D Animated Carousel** — Element selection with CSS 3D transforms and glass reflections
+- 📖 **Built-in Guide** — In-app "How to Play" modal for new players
+- ⚙️ **Settings & Feedback** — Audio toggle, emoji-rated feedback form, and sign-up panel
 
 ---
 
@@ -41,34 +41,34 @@ What makes this version special is its **five elemental themes** — 🔥 Fire, 
 
 ### 🧩 The Board
 
-The game takes place on an **m × n grid**. Every cell has a **critical mass** — the maximum number of orbs it can hold before it explodes. This value depends on how many orthogonal neighbors the cell has:
+The game is played on an **m × n grid**. Each cell has a **critical mass** — the maximum orbs it can hold before it explodes:
 
-| Cell Position | Example | Neighbors | Critical Mass |
-|:---:|:---:|:---:|:---:|
-| ◰ **Corner** | Top-left, Bottom-right | 2 | **2** |
-| ▭ **Edge** | Top row (non-corner), Left column | 3 | **3** |
-| ◼ **Interior** | Any cell not on the border | 4 | **4** |
+| Cell Position | Adjacent Neighbors | Critical Mass |
+|:---:|:---:|:---:|
+| ◰ **Corner** | 2 | **2** |
+| ▭ **Edge** | 3 | **3** |
+| ◼ **Interior** | 4 | **4** |
 
 ### 🔄 Gameplay
 
 | Step | Action | What Happens |
 |:---:|---|---|
-| **1** | **Place** 🟢🔴 | Players alternate turns. Place an orb in any **empty cell** or a cell that **already has your color**. Orbs in the same cell stack up. |
-| **2** | **Explode** 💥 | When a cell's orb count **equals its critical mass**, it bursts! One orb is sent to each orthogonally adjacent cell, and the original cell loses that many orbs. |
-| **3** | **Chain React** ⚡ | The explosion may push a neighboring cell past *its* critical mass — triggering another explosion, then another… creating a **cascading chain reaction**! |
-| **4** | **Capture** 🔄 | When your explosion reaches an opponent's cell, their orbs are **converted to your color**. |
-| **5** | **Win** 🏆 | The last player with orbs remaining on the board **wins the game**! |
+| **1** | **Place** 🟢🔴 | Players alternate turns. Place an orb in any **empty cell** or a cell **already containing your color**. Orbs in the same cell stack up. |
+| **2** | **Explode** 💥 | When a cell's orb count **reaches its critical mass**, it bursts — one orb flies to each orthogonally adjacent cell. |
+| **3** | **Chain React** ⚡ | Explosions may push neighboring cells past *their* critical mass, triggering a **cascading chain reaction**! |
+| **4** | **Capture** 🔄 | Opponent orbs caught in an explosion are **converted to your color**. |
+| **5** | **Win** 🏆 | The last player with orbs on the board **wins**! |
 
 ---
 
 ## 🏗️ Project Structure
 
 ```
-project_CS3/
+Chain-Reaction/
 ├── index.html / homepage.css        # 🏠 Homepage — guide, settings, feedback, sign-up
 ├── Midpage.html / Midpage.css       # 🎠 Element selection — 3D rotating carousel
-├── [element]_mainpage.html / .css   # 🎮 Game boards — one per element (fire, water, earth, air, ether)
-├── [element]_mainpagediagonal.html  # 🎲 Diagonal mode — variant for each element
+├── [element]_mainpage.html / .css   # 🎮 Game boards (fire, water, earth, air, ether)
+├── [element]_mainpagediagonal.html  # 🎲 Diagonal mode variant for each element
 ├── [element]bg.jpg / [element]1.jpg # 🖼️ Theme backgrounds & card images
 ├── [element]sound.mp3               # 🔊 Ambient audio per element
 ├── burstsound.mp3                   # 💥 Orb explosion sound effect
@@ -84,8 +84,8 @@ project_CS3/
 
 **Run Locally:**
 ```bash
-git clone https://github.com/Puravshah321/project_CS3.git
-cd project_CS3
+git clone https://github.com/DiyaShah25/Chain-Reaction.git
+cd Chain-Reaction
 # Open index.html in your browser, or use a local server:
 npx serve .
 ```
@@ -94,8 +94,8 @@ npx serve .
 
 ## 👥 Contributors
 
-Built by a team of **4 contributors** — [view all on GitHub](https://github.com/Puravshah321/project_CS3/graphs/contributors)
+Built by a team of **4 contributors** — [view all on GitHub](https://github.com/DiyaShah25/Chain-Reaction/graphs/contributors)
 
 ---
 
-<p align="center">Made with ❤️ for CS3</p>
+<p align="center">Made with ❤️</p>
