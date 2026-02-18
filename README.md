@@ -94,8 +94,12 @@ npx serve .
 
 ## 👥 Contributors
 
-Built by a team of **4 contributors** — [view all on GitHub](https://github.com/DiyaShah25/Chain-Reaction/graphs/contributors)
+Built by a team of **4 contributors** 
+**Diya Shah**
+**Purav Shah**
+**Heer Shah**
+**Nigam Sanghvi**
 
 ---
 
-<p align="center">Made with ❤️</p>
+<p align="center">Made with ❤️ </p>
