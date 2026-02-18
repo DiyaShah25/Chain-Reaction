@@ -95,10 +95,10 @@ npx serve .
 ## 👥 Contributors
 
 Built by a team of **4 contributors** 
-**Diya Shah**
-**Purav Shah**
-**Heer Shah**
-**Nigam Sanghvi**
+- **Diya Shah** 
+- **Purav Shah**
+- **Nigam Sanghvi** 
+- **Heer Shah** 
 
 ---
 
